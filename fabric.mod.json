@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "fakebalance",
+  "version": "${version}",
+  "name": "Fake Balance Display",
+  "description": "Client-side only. Changes how a balance line looks on YOUR sidebar scoreboard. Nothing is sent to the server and other players see nothing different.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.fakebalance.FakeBalanceMod"]
+  },
+  "mixins": ["fakebalance.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
